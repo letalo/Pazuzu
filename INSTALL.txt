@@ -42,6 +42,6 @@ sudo apt-get install rcconf
 cd ~/Downloads/
 git clone https://github.com/warenick/LeTalo.git
 cd ./LeTalo
-./install.sh
+sudo ./install.sh
 
 
