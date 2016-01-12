@@ -44,4 +44,7 @@ cd ~/Downloads/
 
 git clone https://github.com/warenick/LeTalo.git
 
-cd ./
+cd ./LeTalo
+
+./install.sh
+
