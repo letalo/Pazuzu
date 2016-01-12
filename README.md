@@ -1,2 +1,3 @@
 # LeTalo
-Release client version of our programs
+Release client beta version
+
