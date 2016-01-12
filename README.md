@@ -5,7 +5,6 @@ Install the program:
 
 1) get the Protobuf 3
 
-
 cd ~/Downloads/
 
 git clone https://github.com/google/protobuf.git
