@@ -1,5 +1,5 @@
 # LeTalo
-Release client version of our programs
+Release client beta version
 
 Install the program:
 
@@ -38,4 +38,10 @@ make -j10
 sudo make install
 
 
-3) 
+3) get the Pazuzu
+
+cd ~/Downloads/
+
+git clone https://github.com/warenick/LeTalo.git
+
+cd ./
