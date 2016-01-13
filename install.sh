@@ -18,6 +18,6 @@ chmod +x /etc/init.d/Pazuzu
 echo "copying... daemon PID-->/var/run"
 cp ./Pazuzu.pid /var/run
 
-echo "copying... daemon config-->/etc/init"
-cp ./Pazuzu.conf /etc/init
+#echo "copying... daemon config-->/etc/init"
+#cp ./Pazuzu.conf /etc/init
 
