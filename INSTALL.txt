@@ -32,7 +32,6 @@ sudo apt-get install python-wxgtk python-pip python-dev
 (On some Linux systems, python-wxgtk may be instead named as python-wxgtk2.8.)
 pip install MAVProxy
 
-
 4) get the Pazuzu
 
 sudo apt-get install rcconf
