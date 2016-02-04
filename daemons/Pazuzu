@@ -6,14 +6,13 @@
 # Default-Start:     2 3 4 5
 # Default-Stop:      0 1 6
 # Short-Description: Pazuzu daemon
-# Description:       ya ochen lublyu pisatb opasania... blatb... exx... vrobe norm.
+# Description:       vrode norm
 ### END INIT INFO
 
 # Author: Gamayunov Aleksandr
 #
 # Do NOT "set -e"
 
-# PATH should only include /usr/* if it runs after the mountnfs.sh script
 PATH=/sbin:/usr/sbin:/bin:/usr/bin
 DESC="Pazuzu Daemon"
 NAME=Pazuzu

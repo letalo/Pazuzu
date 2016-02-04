@@ -12,16 +12,7 @@ make -j10
 make check
 sudo make install
 
-2) get the POCO
-
-cd ~/Downloads/
-git clone https://github.com/pocoproject/poco.git
-cd ./poco
-./configure
-make -j10
-sudo make install
-
-3) get the OpenCV 3
+2) get the OpenCV 3
 
 sudo apt-get update
 sudo apt-get install build-essential
@@ -35,6 +26,12 @@ cd ./build
 cmake -D CMAKE_BUILD_TYPE=Release -D CMAKE_INSTALL_PREFIX=/usr/local ..
 make -j10
 sudo make install
+
+3) get the MavProxy
+sudo apt-get install python-wxgtk python-pip python-dev
+(On some Linux systems, python-wxgtk may be instead named as python-wxgtk2.8.)
+pip install MAVProxy
+
 
 4) get the Pazuzu
 

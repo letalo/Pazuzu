@@ -1,25 +1,18 @@
 #!/bin/bash
-
 read -n 1 -p "do you want to install Pazuzu (y/[a]): " AMSURE 
 [ "$AMSURE" = "y" ] || exit
 echo "" 1>&2
-
-echo "copying... Pazuzu-->/usr/sbin"
-cp ./Pazuzu /usr/sbin
-
-echo "go into the directory: ./daemon"
-cd ./daemon
-
+cd ./daemons
+echo "install Pazuzu daemon..."
 echo "copying... daemon script-->/etc/init.d"
 cp ./Pazuzu /etc/init.d
 echo "setting access rights"
 chmod +x /etc/init.d/Pazuzu
-
-echo "copying... daemon PID-->/var/run"
-cp ./Pazuzu.pid /var/run
-
 update-rc.d Pazuzu defaults
-
-#echo "copying... daemon config-->/etc/init"
-#cp ./Pazuzu.conf /etc/init
-
+echo "install MavProxy daemon with two outputs udp connections"
+echo "--out=udp:0.0.0.0:14550 --out=udp:0.0.0.0:14551"
+echo "copying... daemon script-->/etc/init.d"
+cp ./mavgateway /etc/init.d
+echo "setting access rights"
+chmod +x /etc/init.d/mavgateway
+update-rc.d mavgateway defaults
