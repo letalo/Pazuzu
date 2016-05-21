@@ -41,7 +41,7 @@ pip install MAVProxy
 
 sudo apt-get install rcconf
 cd ~/src/
-git clone https://github.com/warenick/LeTalo.git
+git clone https://github.com/letalo/Pazuzu.git
 cd ./LeTalo
 sudo ./install.sh
 
